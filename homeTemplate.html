@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Riling Chen</title>
+</head>
+
+<body>
+    <nav id="main-nav">
+        <a href="index.html"> <h1 id="first-name"> riling </h1></a>
+        <div> 
+            <a href="index.html">Projects</a>
+            <a href="about.html">About</a>
+        </div>
+        <a href="index.html"> <h1 id="last-name"> chen </h1> </a>
+    </nav>
+    
+    
+    <section id="proj-gallery-wrapper">
+
+        <nav id="proj-nav">
+            <h4> Designer x Maker of </h4>
+            <section class="proj-category">
+                <h2 id="spaces">spaces</h2>
+                <ul id="spaces-list">
+                    {{spacesNav}}
+                </ul>
+            </section>
+            
+            <section class="proj-category">
+                <h2 id="objects">objects</h2>
+    
+                <ul id="objects-list">
+                    {{objectsNav}}
+                </ul>
+            </section>
+
+            <section class="proj-category">
+                <h2 id="communities">communities</h2>
+                <ul id="communities-list">
+                    {{communitiesNav}}
+                </ul>
+            </section>
+
+            <section class="proj-category">
+                <h2 id="experiments">experiments</h2>
+                <ul id="experiments-list">
+                    {{experimentsNav}}
+                </ul>
+            </section>
+        </nav>
+
+        <div id="proj-gallery">
+            <section id = "spaces-gallery">
+                {{spacesGal}}
+            </section>
+
+            <section id = "objects-gallery">
+                {{objectsGal}}
+            </section>
+
+            <section id = "communities-gallery">
+                {{communitiesGal}}
+            </section>
+
+            <section id = "experiments-gallery">
+                {{experimentsGal}}
+            </section>
+        </div>
+
+        <section id="credits">
+            <p2>web development & design by <a href="about.html">riling chen</a></p2>
+        </section>
+
+    </section>
+
+<script src="script.js"></script>
+<script src="mainNav.js"></script>
+</body>
+
+</html>
