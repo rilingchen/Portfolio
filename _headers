@@ -3,3 +3,6 @@
 
 /work/*
   Basic-Auth: portfolio:2026
+
+/*
+  Basic-Auth: portfolio:2026
