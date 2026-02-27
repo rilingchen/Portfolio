@@ -1,0 +1,10 @@
+{
+    "1-woHop": {
+        "title": "Wo Hop Upstairs", 
+        "office": "spaced agency", 
+        "collaborators": "",
+	"supervisor": "Justin T.K. Ng",
+        "category": "communities",
+        "description": "After nearly 90 years underground, Wo Hop—the James Beard American Classic—has surfaced at street level with a new dining room. Spaced Agency approached the expansion as an act of architectural archaeology. "
+    }
+}
