@@ -1,0 +1,10 @@
+{
+    "4-IsseyChair": {
+        "title": "Chair for Issey Miyake", 
+        "course": "The Chair Project", 
+        "collaborators": "Tomoki Kaneko",
+	"supervisor": "Elizabeth English, Philip Beesley",
+        "category": "objects",
+        "description": "Inspired by fashion designer, Issey Miyake "
+    }
+}
