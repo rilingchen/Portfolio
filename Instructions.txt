@@ -1,0 +1,22 @@
+When adding new projects: 
+
+Use node as a backend modifier: 
+- In the console, type "node fileName.js"
+
+To create a new project (do this before the other steps!)
+1. "node createProjectDir.js" 
+- Create a new project folder with html file, images folder and info txt file
+
+If you are only updating existing projects, start here:
+2. "node readProjects.js" 
+- this function updates the projects object with any new projects that were added to the folders, or if any information/images were changed/added for existing projects
+
+3. "node updateHomepage.js"
+- This updates the homepage to display the updated information!
+
+4. "node updateProjectPage.js"
+- This updates the project pages to display updated info, like added images/revised text
+
+
+Note:
+Step #2 updates the info store in the projects object which is what the html pages are built from. However, steps 3 and 4 actually update the html and replace it with the new info. Without steps 3 and 4, these changes will not be visualized in the html code. 

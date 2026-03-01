@@ -1,0 +1,10 @@
+{
+    "8-MakingChidori": {
+        "title": "Making Chidori", 
+        "course": "ARC3718 Wood in Architecture", 
+        "collaborators": "",
+	"supervisor": "Christine Ho Ping Kong, Peter Tan",
+        "category": "objects",
+        "description": ""
+    }
+}

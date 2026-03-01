@@ -1,0 +1,10 @@
+{
+    "7-wareHaus": {
+        "title": "wareHaus", 
+        "course": "ARC3015 Option Studio", 
+        "collaborators": "",
+	"supervisor": "Christine Ho Ping Kong, Peter Tan",
+        "category": "spaces",
+        "description": ""
+    }
+}

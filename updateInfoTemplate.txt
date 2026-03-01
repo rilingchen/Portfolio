@@ -1,0 +1,45 @@
+const fs = require('fs');
+const template = fs.readFileSync('projects/infoTemplate.txt', 'utf8'); 
+const templateObj = JSON.parse(template);
+const path = require('path'); 
+const projectDir = path.join(__dirname, 'projects');
+let changesMade = false;
+
+
+// Go through the keys in the info.txt file and see if the new key exists, if not, add
+fs.readdirSync(projectDir).forEach(folder => {
+    // get info.txt file
+    const filePath = path.join(projectDir, folder, 'info.txt');
+    const projectPath = path.join(projectDir, folder);
+    let html;
+
+    // if the text file exists, compare the of the project info.txt file to the template
+    if (filePath){
+        const templateKeys = Object.keys(templateObj);
+        const projectInfoTxt = fs.readFileSync(filePath);
+        const projectObj = projectInfoTxt[1];
+
+        // Check if each key exists in the project's info.txt file
+        templateKeys.forEach(key=>{
+            // If the key doesn't exist, add it
+            if (!projectObj.hasOwnProperty(key)){
+                projectObj[key] = '';
+                return changesMade = true;
+            }else{
+                return;
+            }
+        });
+
+        // if there were changes made, replace info.txt with these new changes
+        if (changesMade){
+            //delete info.txt
+            fs.unlink(filePath)
+
+            //add new info.txt
+            fs.writeFile('info.txt', projectObj, 'utf8');
+        }
+    }
+
+    
+});
+

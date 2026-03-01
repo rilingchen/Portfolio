@@ -1,0 +1,10 @@
+{
+    "1-FamiliarFaces": {
+        "title": "Familiar Faces, Making Traces", 
+        "course": "MARC 2 Comprehensive Studio", 
+        "collaborators": "Sharon Lam",
+	"supervisor": "James Macgillivray",
+    "awards": "Professor Jeffery A. Stinson Graduate Student Endowment Fund Award",
+        "category": "spaces"
+    }
+}

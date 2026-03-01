@@ -1,0 +1,10 @@
+{
+    "5-Durham": {
+        "title": "Durham Shelter", 
+        "office": "LGA Architectural Partners", 
+        "collaborators": "",
+	"supervisor": "Alex Tedesco, Angie Michail",
+        "category": "communities",
+        "description": ""
+    }
+}

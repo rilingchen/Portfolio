@@ -1,0 +1,10 @@
+{
+    "3-mtrlchinatown": {
+        "title": "Maison du Quartier chinois", 
+        "office": "spaced agency", 
+        "collaborators": "",
+	"supervisor": "Justin T.K. Ng",
+        "category": "communities",
+        "description": ""
+    }
+}

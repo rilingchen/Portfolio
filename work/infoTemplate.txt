@@ -1,0 +1,10 @@
+{
+    "{{projKey}}": {
+        "title": "", 
+        "office": "", 
+        "collaborators": "",
+	"supervisor": "",
+        "category": "",
+        "description": ""
+    }
+}

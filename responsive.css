@@ -1,0 +1,103 @@
+/*Responsive Styles*/
+
+/* Extra Small Screens (Mobile) */
+@media only screen and (max-width: 576px) {
+    .proj-category {
+        grid-template-columns: 1fr;
+        width:8vw;
+        align-content: center;
+    }
+
+    .proj-category h2 {
+        
+        font-size:1rem;
+        object-fit:contain;
+    }
+
+    .proj-category ul{
+        position:fixed;
+        top:0;
+        z-index:-1;
+        display:none;
+    }
+
+    html {
+        font-size:8px;
+    }
+}
+
+/* Small Screens (Tablets) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    html {
+        font-size:10px;
+    }
+}
+
+/* Medium Screens (Large Tablets) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    html {
+        font-size:12px;
+    }
+
+}
+
+/* Large Screens (Desktops) */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+
+}
+
+/* Extra Large Screens (Large Desktops) */
+@media only screen and (min-width: 1441px) {
+}
+
+/* General Styles - Smaller than Medium Tablets */
+
+@media only screen and (max-width: 1024px) {
+
+    /* Homepage styles */
+    .proj-category {
+        grid-template-columns: 1fr;
+        width:8vw;
+        align-content: center;
+    }
+
+    .proj-category ul{
+        position:fixed;
+        top:0;
+        z-index:-1;
+        display:none;
+    }
+
+    /* Project Page Styles */
+    #proj-pg-wrapper {
+        display: grid;
+        width:100%;
+        grid-template-columns: 1fr;
+        row-gap: 2vh;
+    }
+
+    .proj-pg-info-wrapper{
+        order:1;
+        display:grid;
+        grid-template-columns: 3fr 6fr;
+        column-gap: 3vw;
+        width: 100%;
+    }
+
+    .proj-pg-text{
+        width:100%;
+    }
+    #credits p2 {
+        position:sticky;
+        z-index:1;
+        transform: translateY(-100%) rotate(90deg);
+
+    }
+
+    /* About Page Styles */
+    #about-content {
+        width:90%;
+    }
+}

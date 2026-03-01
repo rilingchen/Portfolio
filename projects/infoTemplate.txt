@@ -1,0 +1,10 @@
+{
+    "{{projKey}}": {
+        "title": "", 
+        "courseName": "", 
+        "collaborators": "",
+	"supervisor": "",
+        "category": "",
+        "description": ""
+    }
+}

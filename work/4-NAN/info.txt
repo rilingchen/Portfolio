@@ -1,0 +1,10 @@
+{
+    "4-NAN": {
+        "title": "Nishnawbe Aski Nation Housing Lodge", 
+        "office": "LGA Architectural Partners", 
+        "collaborators": "",
+	"supervisor": "Dean Goodman, Noah Wadden",
+        "category": "communities",
+        "description": ""
+    }
+}

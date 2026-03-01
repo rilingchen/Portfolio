@@ -1,0 +1,10 @@
+{
+    "3-MovingCities": {
+        "title": "Moving Cities", 
+        "courseName": "", 
+        "collaborators": "",
+	"supervisor": "",
+        "category": "experiments",
+        "description": "Moving Cities is a photobook compiling the photos I’ve taken between 2017 to 2022, with a Nikon dslr.  This camera has been my companion as I have travelled the world visiting different cities. It captures the moments in time that were beautiful or interesting to me. As I look back on these photos which span five years and three continents, I’ve noticed common themes that permeate them. What compelled me to capture this moment? Spanning from North America, Asia and Europe, this series of photos propose the questions: what is it that moves us and what is it that makes a city move? It reveals the characters, buildings and atmospheres of a city which are always changing from one moment to the next. "
+    }
+}
