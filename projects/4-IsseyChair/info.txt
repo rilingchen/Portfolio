@@ -5,6 +5,6 @@
         "collaborators": "Tomoki Kaneko",
 	"supervisor": "Elizabeth English, Philip Beesley",
         "category": "objects",
-        "description": "Inspired by fashion designer, Issey Miyake "
+        "featured in": "The Chair Project Exhibition, The Chair Project Book"
     }
 }

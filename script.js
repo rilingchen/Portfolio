@@ -144,8 +144,8 @@ if ('ontouchstart' in window) {
     // Show swipe hint
     const swipeHint = document.createElement('p');
     const scrollHint = document.createElement('p');
-    swipeHint.textContent = 'Swipe to scroll through gallery';
-    scrollHint.textContent = 'Scroll down for description'
+    swipeHint.textContent = '→ Swipe to scroll through gallery';
+    scrollHint.textContent = '↓ Scroll down for description'
     swipeHint.classList.add('instructions');
     scrollHint.classList.add('instructions');
     document.querySelector('.proj-pg-gallery').after(swipeHint);
@@ -156,19 +156,24 @@ if ('ontouchstart' in window) {
         swipeHint.style.display = 'none';
     }, { once: true });
 
-    // Swipe detection for gallery
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    gallery.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-    });
-
-    gallery.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    });
+    // Hide scroll hint after first scroll
+    window.addEventListener('scroll', () => {
+        scrollHint.style.display = 'none';
+    }, { once: true });
 }
+
+// Swipe detection for gallery
+let touchStartX = 0;
+let touchEndX = 0;
+
+gallery.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+gallery.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+});
 
 function handleSwipe() {
     const swipeThreshold = 50; // minimum px to count as a swipe

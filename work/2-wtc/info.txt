@@ -4,7 +4,6 @@
         "office": "spaced agency", 
         "collaborators": "",
 	"supervisor": "Justin T.K. Ng",
-        "category": "communities",
-        "description": ""
+        "category": "communities"
     }
 }
