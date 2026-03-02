@@ -36,6 +36,17 @@ function writeHTML(projects, dir){
         let newProject = projects[key];
         const dirBase = config[dir].baseDir;
         let navItem = `<li id="scroll-to-${key}">${newProject.title}</li>`;
+        let display;
+
+        // find out what the display caption is
+        if (newProject.course) {
+            display = newProject.course;
+        } else if (newProject.office) {
+            display = newProject.office;
+        } else {
+            display = newProject.medium;
+        }
+
         let html = `
             <section class="proj-item">
                 <a class="proj-link" href="${dirBase}/${key}/index.html">
@@ -43,7 +54,7 @@ function writeHTML(projects, dir){
                     <div class="proj-info-wrapper">
                         <h2 class="proj-name">${newProject.title}</h2>
                         <div class="proj-info">
-                            <p class="proj-course">${newProject.course}</p>
+                            <p class="proj-course">${display}</p>
                         </div>
                     </div>
                 </a>

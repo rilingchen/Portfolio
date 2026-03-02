@@ -130,11 +130,65 @@ if (gallery){
     });
 };
 
+//add keypress event listener
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') {
+        nextBtn.click();
+    } else if (e.key === 'ArrowLeft') {
+        prevBtn.click();
+    }
+});
+
+// 4. Add a swipe to all project page galleries for touchscreen devices
+if ('ontouchstart' in window) {
+    // Show swipe hint
+    const swipeHint = document.createElement('p');
+    const scrollHint = document.createElement('p');
+    swipeHint.textContent = 'Swipe to scroll through gallery';
+    scrollHint.textContent = 'Scroll down for description'
+    swipeHint.classList.add('instructions');
+    scrollHint.classList.add('instructions');
+    document.querySelector('.proj-pg-gallery').after(swipeHint);
+    document.querySelector('.proj-pg-gallery').after(scrollHint);
+
+    // Hide hint after first swipe
+    gallery.addEventListener('touchend', () => {
+        swipeHint.style.display = 'none';
+    }, { once: true });
+
+    // Swipe detection for gallery
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    gallery.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    gallery.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+}
+
+function handleSwipe() {
+    const swipeThreshold = 50; // minimum px to count as a swipe
+    const diff = touchStartX - touchEndX;
+
+    if (diff > swipeThreshold) {
+        // swiped left → next image
+        nextBtn.click();
+    } else if (diff < -swipeThreshold) {
+        // swiped right → previous image
+        prevBtn.click();
+    }
+}
+
+
+
+
+
 // 4. Unmute videos on click, show unmute button on hover
 vid.addEventListener('click', () => {
   vid.muted = !vid.muted;
   vid.title = vid.muted ? 'Unmute' : 'Mute';
 });
-
-// add hover event
-vid.addEventListener('hover', )

@@ -1,7 +1,7 @@
 {
     "3-MovingCities": {
         "title": "Moving Cities", 
-        "courseName": "", 
+        "medium": "Photography Book", 
         "collaborators": "",
 	"supervisor": "",
         "category": "experiments",
